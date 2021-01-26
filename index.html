@@ -1,0 +1,123 @@
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/intlTelInput.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.inputmask.bundle.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <h3>Input Maskings</h3>
+        </div>
+        <form>
+            <div class="row" style="margin-top:30px">
+                <div class="col-md-6 center">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Currency Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="currency" id="currency-input" data-mask-currency="AED" placeholder="AED 100,000.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Decimal Masking(Left Align)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="decimal" id="decimal-input" placeholder="100,000.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Decimal Masking(Right Align)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="decimal" id="decimal-right-input" rightAlign="true" placeholder="100,000.00">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Decimal Masking(Allow Minus)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="decimal" id="decimal-minus-input" allowMinus="true" placeholder="-100,000.00">
+                    </div>
+					<div class="form-group">
+                        <label for="exampleFormControlInput1">Numbers</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="number" id="number-input" placeholder="100,000">
+                    </div>
+					<div class="form-group">
+                        <label for="exampleFormControlInput1">Numbers (Allow Minus)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="number" id="number-minus-input" allowMinus="true" placeholder="-100,000">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(sqft)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="sqft" id="sqft-input" placeholder="100,000.00 sqft">
+                    </div>
+					 <div class="form-group">
+                        <label for="exampleFormControlInput1">Phone No Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="telphone" id="phone-input" placeholder="+971-34-389-1090">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(iban)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="iban" id="iban-input" maxlength="21" placeholder="AE123456789123456789452">
+                    </div>
+                   
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(%)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="percent" id="percent-input" placeholder="75%">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(hrs)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="hours" id="hours-input" placeholder="100,000.00 hrs">
+                    </div>
+					<div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(month)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="month" id="month-input" placeholder="10 month">
+                    </div>
+					<div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(year)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="year" id="year-input" placeholder="5.2 year">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Credit Card Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="ccNumber" id="ccNumber-input" placeholder="1111-1111-1111-1111">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">CVV Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="cvv" id="cvv-input"  placeholder="123">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">UAE ID Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="uae_id" id="uae_id-input" placeholder="784-1933-3332556-6">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Passport No. Masking</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="Passport_No" id="Passport_No-input" data-mask-prefix="DP" placeholder="DP-1111111">
+                    </div>
+					 <div class="form-group">
+                        <label for="exampleFormControlInput1">Masking(P.O Box)</label>
+                        <input type="text" class="form-control input-mask" data-mask-type="pobox" id="pobox-input" placeholder="888888">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="alert alert-info">
+                        <p>
+                            To get values from following Input Please use the following function: getInputValue("[input-id]") this function will gives the input value.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class=" copyright py-3 mt-5">
+        <div class="container p-0">
+            <div class="col-md-12">
+                <div class="row m-0">
+                    <div class="col-md-6 p-0">
+                        <p class="m-0 text-left">Copyright © 2021 Amir Ihsan.</p>
+                    </div>
+                    <div class="col-md-6 p-0">
+                        <p class="m-0 text-right">All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
